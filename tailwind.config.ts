@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Cyberpunk theme colors
+				cyber: {
+					'dark': '#0D0E19',
+					'dark-purple': '#1A1F2C',
+					'blue': '#1EAEDB',
+					'purple': '#8B5CF6',
+					'pink': '#D946EF',
+					'orange': '#F97316',
+					'yellow': '#FCD34D',
+					'green': '#10B981',
 				}
 			},
 			borderRadius: {
@@ -70,26 +82,51 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' },
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' },
+				},
+				'pulse-glow': {
+					'0%, 100%': { 
+						opacity: '1',
+						filter: 'brightness(1)',
 					},
-					to: {
-						height: '0'
-					}
-				}
+					'50%': { 
+						opacity: '0.8', 
+						filter: 'brightness(1.2)',
+					},
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
+				'spin-slow': {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+				'float': 'float 6s ease-in-out infinite',
+				'spin-slow': 'spin-slow 15s linear infinite',
+			},
+			fontFamily: {
+				'cyber': ['Orbitron', 'sans-serif'],
+			},
+			boxShadow: {
+				'neon-blue': '0 0 5px theme("colors.cyber.blue"), 0 0 10px theme("colors.cyber.blue")',
+				'neon-purple': '0 0 5px theme("colors.cyber.purple"), 0 0 10px theme("colors.cyber.purple")',
+				'neon-pink': '0 0 5px theme("colors.cyber.pink"), 0 0 10px theme("colors.cyber.pink")',
+			},
+			backgroundImage: {
+				'cyber-grid': 'linear-gradient(rgba(13, 14, 25, 0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(13, 14, 25, 0.8) 1px, transparent 1px)',
+				'cyber-gradient': 'linear-gradient(45deg, #8B5CF6 0%, #1EAEDB 50%, #D946EF 100%)',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
