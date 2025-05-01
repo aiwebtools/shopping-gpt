@@ -5,7 +5,7 @@ const features = [
   {
     icon: '🔍',
     title: 'Smart Product Discovery',
-    description: 'Advanced AI algorithms analyze your preferences to find exactly what you need, even when you're not sure what you're looking for.'
+    description: 'Advanced AI algorithms analyze your preferences to find exactly what you need, even when you\'re not sure what you\'re looking for.'
   },
   {
     icon: '💰',

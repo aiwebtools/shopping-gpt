@@ -6,7 +6,7 @@ const steps = [
   {
     number: '01',
     title: 'Chat with Shopping GPT',
-    description: 'Tell our AI what you're looking for in plain language, just like talking to a shopping expert.',
+    description: 'Tell our AI what you\'re looking for in plain language, just like talking to a shopping expert.',
     color: 'bg-cyber-blue'
   },
   {
