@@ -118,6 +118,50 @@ const ThreeDElement: React.FC = () => {
       ring.rotation.x = Math.PI / 2;
       ring.position.y = 1.5;
       cartGroup.add(ring);
+
+      // Add "STEP UP YOUR SHOPPING GAME!" text
+      // Create a canvas for the text
+      const canvas = document.createElement('canvas');
+      const context = canvas.getContext('2d');
+      canvas.width = 512;
+      canvas.height = 128;
+      
+      if (context) {
+        context.fillStyle = 'rgba(0, 0, 0, 0)';
+        context.fillRect(0, 0, canvas.width, canvas.height);
+        
+        // Text styling
+        context.font = 'bold 48px Arial';
+        context.textAlign = 'center';
+        context.textBaseline = 'middle';
+        
+        // Create gradient
+        const gradient = context.createLinearGradient(0, 0, canvas.width, 0);
+        gradient.addColorStop(0, '#D946EF'); // cyber-pink
+        gradient.addColorStop(0.5, '#8B5CF6'); // cyber-purple
+        gradient.addColorStop(1, '#1EAEDB'); // cyber-blue
+        
+        context.fillStyle = gradient;
+        context.fillText("STEP UP YOUR", canvas.width / 2, canvas.height / 3);
+        context.fillText("SHOPPING GAME!", canvas.width / 2, canvas.height * 2/3);
+        
+        // Convert canvas to texture
+        const texture = new THREE.CanvasTexture(canvas);
+        
+        // Create text plane
+        const textGeometry = new THREE.PlaneGeometry(4, 1);
+        const textMaterial = new THREE.MeshBasicMaterial({
+          map: texture,
+          transparent: true,
+          side: THREE.DoubleSide
+        });
+        
+        const textMesh = new THREE.Mesh(textGeometry, textMaterial);
+        textMesh.position.y = 3;
+        textMesh.rotation.x = -Math.PI / 6; // Tilt it slightly
+        
+        cartGroup.add(textMesh);
+      }
       
       scene.add(cartGroup);
       
@@ -150,10 +194,18 @@ const ThreeDElement: React.FC = () => {
       
       window.addEventListener('resize', handleResize);
       
+      // Make the canvas clickable
+      renderer.domElement.style.cursor = 'pointer';
+      renderer.domElement.addEventListener('click', () => {
+        window.open('https://chatgpt.com/g/g-6813888952088191a6d9615d86156949-shopping-gpt', '_blank');
+      });
+      
       // Cleanup
       return () => {
         window.removeEventListener('resize', handleResize);
-        container.removeChild(renderer.domElement);
+        if (container.contains(renderer.domElement)) {
+          container.removeChild(renderer.domElement);
+        }
       };
     };
     
@@ -169,7 +221,9 @@ const ThreeDElement: React.FC = () => {
   return (
     <div 
       ref={canvasRef} 
-      className="h-[300px] w-[300px] md:h-[500px] md:w-[500px] relative"
+      className="h-[300px] w-[300px] md:h-[500px] md:w-[500px] relative cursor-pointer"
+      onClick={() => window.open('https://chatgpt.com/g/g-6813888952088191a6d9615d86156949-shopping-gpt', '_blank')}
+      title="Click to start shopping with Shopping GPT"
     />
   );
 };
