@@ -13,14 +13,40 @@ import ConsentPopup from '@/components/ConsentPopup';
 const Index: React.FC = () => {
   return (
     <div className="min-h-screen bg-cyber-dark text-white">
-      <NavBar />
-      <Hero />
-      <Features />
-      <HowItWorks />
-      <Testimonials />
-      <FAQ />
-      <Disclaimer />
-      <Footer />
+      <header>
+        <NavBar />
+      </header>
+      
+      <main>
+        <section aria-label="Hero section with main call to action">
+          <Hero />
+        </section>
+        
+        <section aria-label="Product features and capabilities">
+          <Features />
+        </section>
+        
+        <section aria-label="How Shopping GPT works">
+          <HowItWorks />
+        </section>
+        
+        <section aria-label="Customer testimonials and reviews">
+          <Testimonials />
+        </section>
+        
+        <section aria-label="Frequently asked questions">
+          <FAQ />
+        </section>
+        
+        <section aria-label="Legal disclaimer and terms">
+          <Disclaimer />
+        </section>
+      </main>
+      
+      <footer>
+        <Footer />
+      </footer>
+      
       <ConsentPopup />
     </div>
   );
