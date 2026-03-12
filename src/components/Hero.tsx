@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
               >
                 <Button
                   variant="outline"
-                  className="border-2 border-yellow-400 text-yellow-300 hover:bg-yellow-400/20 hover:text-yellow-200 px-10 py-8 font-cyber font-bold text-xl rounded-md divine-shadow hover:divine-glow transition-all duration-500 transform hover:scale-105"
+                  className="w-full sm:w-auto border-2 border-yellow-400 text-yellow-300 hover:bg-yellow-400/20 hover:text-yellow-200 px-6 sm:px-10 py-6 sm:py-8 font-cyber font-bold text-base sm:text-xl rounded-md divine-shadow hover:divine-glow transition-all duration-500 transform hover:scale-105"
                 >
                   MORE AI TOOLS
                 </Button>
