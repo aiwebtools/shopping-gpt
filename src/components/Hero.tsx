@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
                 aria-label="Start using Shopping GPT AI assistant now"
               >
                 <Button
-                  className="bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-400 hover:from-amber-300 hover:via-yellow-200 hover:to-amber-300 text-black px-10 py-8 font-cyber font-bold text-xl rounded-md divine-shadow hover:divine-glow transition-all duration-500 transform hover:scale-105"
+                  className="w-full sm:w-auto bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-400 hover:from-amber-300 hover:via-yellow-200 hover:to-amber-300 text-black px-6 sm:px-10 py-6 sm:py-8 font-cyber font-bold text-base sm:text-xl rounded-md divine-shadow hover:divine-glow transition-all duration-500 transform hover:scale-105"
                 >
                   GO SHOPPING NOW
                 </Button>
