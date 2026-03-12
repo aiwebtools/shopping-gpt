@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center border-t border-gradient-to-r from-yellow-400/30 via-white/30 to-yellow-400/30 pt-8">
           <div className="text-center md:text-left mb-4 md:mb-0">
             <a 
-              href="https://www.aiwebtools.ai"
+              href="https://aiwebtools.lovable.app/?via=aiwebtools"
               target="_blank"
               rel="noreferrer"
               className="text-gray-400 hover:text-yellow-300 hover:drop-shadow-divine transition duration-300"
