@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
               Your AI-Powered Shopping Super Sidekick
             </h2>
             
-            <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-xl leading-relaxed">
+            <p className="text-base sm:text-xl md:text-2xl text-gray-200 mb-6 sm:mb-10 max-w-xl leading-relaxed">
               Smarter Picks, Killer Deals, Zero Nonsense. Experience the new shopping capabilities of GPT technology.
             </p>
             
