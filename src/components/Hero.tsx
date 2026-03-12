@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
       <div className="absolute top-2/3 left-1/3 w-96 h-96 bg-gradient-to-r from-white/20 via-yellow-200/20 to-white/20 rounded-full filter blur-3xl animate-divine-pulse -z-10"></div>
       <div className="absolute top-1/2 right-1/4 w-72 h-72 bg-gradient-to-r from-amber-400/25 via-yellow-300/25 to-amber-400/25 rounded-full filter blur-3xl animate-divine-spiral -z-10"></div>
       
-      <div className="container mx-auto px-8 py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="w-full lg:w-1/2 z-10 space-y-8">
             <h1 id="hero-heading" className="text-5xl md:text-7xl font-cyber font-bold mb-8">
