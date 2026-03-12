@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
               </span>
             </h1>
             
-            <h2 className="text-2xl md:text-4xl font-cyber font-bold mb-10 text-amber-300 drop-shadow-divine">
+            <h2 className="text-xl sm:text-2xl md:text-4xl font-cyber font-bold mb-6 sm:mb-10 text-amber-300 drop-shadow-divine">
               Your AI-Powered Shopping Super Sidekick
             </h2>
             
