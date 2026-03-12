@@ -150,7 +150,7 @@ const Footer: React.FC = () => {
             
             <div className="fixed bottom-4 right-4 z-20">
               <a 
-                href="https://www.aiwebtools.ai"
+                href="https://aiwebtools.lovable.app/?via=aiwebtools"
                 target="_blank"
                 rel="noreferrer"
                 className="bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-400 text-black font-cyber font-bold py-2 px-6 rounded-full divine-shadow hover:divine-glow transition-all duration-500 flex items-center"

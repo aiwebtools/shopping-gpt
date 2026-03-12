@@ -114,7 +114,7 @@ const NavBar: React.FC = () => {
               Disclaimer
             </Button>
             <a 
-              href="https://www.aiwebtools.ai"
+              href="https://aiwebtools.lovable.app/?via=aiwebtools"
               target="_blank"
               rel="noreferrer"
               className="block px-4 py-2 text-white hover:text-cyber-pink transition duration-300"

@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
                 </Button>
               </a>
               <a 
-                href="https://www.aiwebtools.ai"
+                href="https://aiwebtools.lovable.app/?via=aiwebtools"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Explore more free AI tools from AIWEBTOOLS.AI"
