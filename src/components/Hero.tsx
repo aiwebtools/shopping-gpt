@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="w-full lg:w-1/2 z-10 space-y-8">
-            <h1 id="hero-heading" className="text-5xl md:text-7xl font-cyber font-bold mb-8">
+            <h1 id="hero-heading" className="text-3xl sm:text-5xl md:text-7xl font-cyber font-bold mb-4 sm:mb-8">
               <span className="bg-gradient-to-r from-yellow-300 via-amber-200 to-yellow-300 bg-clip-text text-transparent drop-shadow-divine animate-divine-text-glow">
                 SHOPPING GPT
               </span>
