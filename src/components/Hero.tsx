@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
           
-          <div className="w-full lg:w-1/2 mt-16 lg:mt-0 flex justify-center items-center z-10">
+          <div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center items-center z-10">
             <div className="relative" role="img" aria-label="Shopping GPT 3D visualization">
               <div className="absolute -inset-8 bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-400 rounded-full blur-2xl opacity-30 animate-divine-spiral"></div>
               <div className="absolute -inset-4 bg-gradient-to-r from-white via-yellow-200 to-white rounded-full blur-xl opacity-20 animate-divine-pulse"></div>
