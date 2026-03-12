@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
               Smarter Picks, Killer Deals, Zero Nonsense. Experience the new shopping capabilities of GPT technology.
             </p>
             
-            <p className="text-lg text-yellow-200 mb-10 max-w-xl font-medium">
+            <p className="text-sm sm:text-lg text-yellow-200 mb-6 sm:mb-10 max-w-xl font-medium">
               SHOPPING GPT IS THE #1 AI SHOPPING AGENT THAT FINDS THE BEST DEALS FOR ANYTHING YOU ARE LOOKING TO BUY
             </p>
             
