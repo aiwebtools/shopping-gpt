@@ -20,7 +20,7 @@ const Logo: React.FC = () => {
         <div className="text-xs text-gray-400">
           Presented by{' '}
           <a 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank" 
             rel="noreferrer"
             className="text-cyber-blue hover:text-cyber-pink transition-colors duration-300"

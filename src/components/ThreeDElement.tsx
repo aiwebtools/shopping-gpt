@@ -221,7 +221,7 @@ const ThreeDElement: React.FC = () => {
   return (
     <div 
       ref={canvasRef} 
-      className="h-[300px] w-[300px] md:h-[500px] md:w-[500px] relative cursor-pointer"
+      className="h-[220px] w-[220px] sm:h-[300px] sm:w-[300px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px] relative cursor-pointer"
       onClick={() => window.open('https://chatgpt.com/g/g-6813888952088191a6d9615d86156949-shopping-gpt', '_blank')}
       title="Click to start shopping with Shopping GPT"
     />
